@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            #app {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        </style>
+        <title>Chip8JS</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <input type="file" id="file" />
+
+            <canvas id="renderer"></canvas>
+
+            <div class="options">
+                <button id="stop">Kill emulation</button>
+                <input id="cyclerate" placeholder="Target cyclerate" />
+                <button id="setCyclerate">Set cyclerate</button>
+            </div>
+            <script src="dist/main.js"></script>
+        </div>
+    </body>
+</html>
